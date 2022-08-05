@@ -1,0 +1,21 @@
+version: "3.7"
+services:
+  rabbitqueue:
+    image: rabbitmq:3-management-alpine
+    container_name: messanger_rabbitmq
+    environment:
+      RABBIT_DEFAULT_USER: guest
+      RABBIT_DEFAULT_PASS: guest
+    ports:
+    - 5672:5672
+    - 15672:15672
+
+  messageReceiverService:
+    build:
+      context: message-receiver
+      dockerfile: Dockerfile
+    image: sujit/message-receiver
+    ports:
+    - 8081:8081
+    links:
+      - rabbitqueue
