@@ -1,13 +1,13 @@
-package com.sujit.messanger;
+package com.sujit.messagereceiver;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class MessangerApplication {
+public class MessageReceiverApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(MessangerApplication.class, args);
+        SpringApplication.run(MessageReceiverApplication.class, args);
     }
 
 }

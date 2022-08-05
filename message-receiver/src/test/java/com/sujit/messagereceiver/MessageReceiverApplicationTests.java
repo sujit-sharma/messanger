@@ -1,10 +1,10 @@
-package com.sujit.messanger;
+package com.sujit.messagereceiver;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class MessangerApplicationTests {
+class MessageReceiverApplicationTests {
 
     @Test
     void contextLoads() {
