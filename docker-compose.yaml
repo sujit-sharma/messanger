@@ -6,16 +6,17 @@ services:
     environment:
       RABBIT_DEFAULT_USER: guest
       RABBIT_DEFAULT_PASS: guest
+      RABBIT_DEFAULT_VHOST: my_vhost
     ports:
     - 5672:5672
     - 15672:15672
 
-  messageReceiverService:
-    build:
-      context: message-receiver
-      dockerfile: Dockerfile
-    image: sujit/message-receiver
-    ports:
-    - 8081:8081
-    links:
-      - rabbitqueue
+#  messageReceiverService:
+#    build:
+#      context: message-receiver
+#      dockerfile: Dockerfile
+#    image: sujit/message-receiver
+#    ports:
+#    - 8081:8081
+#    links:
+#      - rabbitqueue
