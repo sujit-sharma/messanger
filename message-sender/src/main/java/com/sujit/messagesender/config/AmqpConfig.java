@@ -25,7 +25,7 @@ public class AmqpConfig {
 
     @Bean
     Binding binding(Queue queue, TopicExchange exchange) {
-        return BindingBuilder.bind(queue).to(exchange).with("*");
+        return BindingBuilder.bind(queue).to(exchange).with("user-message-q");
     }
 
 }

@@ -25,17 +25,5 @@ public class RabbitConverterConfig {
         return rabbitTemplate;
     }
 
-//    public CachingConnectionFactory cachingConnectionFactory() {
-//        CachingConnectionFactory cachingConnectionFactory = new CachingConnectionFactory();
-//        cachingConnectionFactory.setUsername("guest");
-//        cachingConnectionFactory.setPassword("guest");
-//        cachingConnectionFactory.setVirtualHost("");
-//        cachingConnectionFactory.setHost("");
-//        cachingConnectionFactory.setPort(5672);
-//        cachingConnectionFactory.setRequestedHeartBeat(30);
-//        cachingConnectionFactory.setConnectionTimeout(30000);
-//        return cachingConnectionFactory;
-//    }
-
 
 }
